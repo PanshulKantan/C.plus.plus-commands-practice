@@ -4,6 +4,8 @@ int main(){
     using std::cout;
     using std::cin;
     int a,c,z;
+
+    //note: char uses +,-,*,/,% etc and not only abcdefg etc
     char b;
     cout << "first value: ";
     cin >> a;
