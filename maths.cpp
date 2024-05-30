@@ -1,5 +1,5 @@
 #include <iostream>
-
+//include cmath EVERYTIME YOU HAVE POWER AND SQRT COMMANDS
 #include <cmath>
 
 int main (){
