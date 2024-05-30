@@ -59,4 +59,28 @@ int main(){
     trial(num);
 } 
 
+
+ALSOOOOOO 
+
+#include <iostream>
+#include <string>
+using std::cout;
+using std::cin;
+
+int a =5; (global variable)
+
+void trial(){
+    cout << a;
+}
+
+int main(){
+    trial();
+} 
+
+
+the variables you assign out of the callers like int main and void, etc are global variables
+and inside a caller are local variables, and hence callers cant see each others local variables 
+hence we have to assign an argument in int main() for void to use the variables in int main()
+but global variables are something you can use without any extra effort hence it will work.
+
 */
