@@ -3,8 +3,8 @@
 using std::cout;
 using std::cin;
 void bal (int bal);
-double depos(int dep);
-double with(int with);
+double depos();
+double with();
 int main(){
     int choice;
     double balance = 0;
@@ -20,20 +20,29 @@ int main(){
          cout << "ENTER HERE: ";
          cin >> choice;
       switch(choice){
-        case 1:
-            balance += withdrawl -= deposit;
-            bal(balance);
-            break;
         case 2:
-            balance += depos(deposit);
+            deposit = depos();
+            balance += deposit;
+            if(deposit < 0){
+                cout << "Enter a valid amount, try again \n";
+            } else{
             cout << "Your balance now is " << balance << '\n';
+            }
             break;
         case 3:
-            balance -= with(withdrawl);
+            withdrawl = with();
+            balance -= withdrawl;
+            if (withdrawl <=0){
+                cout << "Enter a valid amount, try again \n";
+            } else{
             cout << "Your balance now is " << balance << '\n';
+            }
             break;
         case 4:
             cout << "have a nice day" << '\n';
+            break;
+        case 1:
+            bal(balance);
             break;
         default:
             cout << "please enter valid number" << '\n';
@@ -42,14 +51,17 @@ int main(){
     }while(choice != 4);
 }
 void bal(int bal){
+        
         cout << "your balance is " << bal << '\n';
 }
-double depos(int dep){
+double depos(){
+    int dep;
     cout << "Enter amount you want to deposit: ";
     cin >> dep;
     return dep;
 }
-double with(int with){
+double with(){
+    int with;
     cout << "Enter amount you want to withdraw: ";
     cin >> with;
     return with;
