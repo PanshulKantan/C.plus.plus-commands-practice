@@ -85,7 +85,8 @@ void game(int attack, int num){
             case 3:
                 cout << "COMPUTER CHOSE " << r << '\n';
                 cout << "YOU CHOSE " << S << '\n';
-                cout << "*****YOU LOST KIDDO >:)***** \n"; 
+                cout << "*****YOU LOST KIDDO >:)***** \n";
+                break; 
             default:
                 cout << "ENTER BETWEEN 1,2 OR 3, YOU GET A PENALTY HENCE YOU HAVE TO PLAY IT AGAIN  >>>:((((( \n ";
         }
