@@ -8,7 +8,9 @@ std::string car[] = {"audi", "bmw", "mercedes"};
 
 // if written car[0]= "swift", it will replace audi with it according to the sequence of code
 //starting from 0,1,2, etc, you can use that particular argument you want to, car[2] means mercedes as its 3rd, 0,1,2
-std::cout << car[2] ;
+std::cout << car[1] << '\n';
+std::cout << sizeof(car);
+//sizeof() tells the size of a particular type you want to choose like car, here it is summing up all the space of 3 strings each of 32 resulting 96 bytes
 
 return 0;
 }
