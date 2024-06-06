@@ -15,7 +15,7 @@ void sort(int num[], int size){
     for(int i=0; i<size-1; i++){
 // for each index in sequence, adjacents are compared and assigned, mostly get assigned and sorted from the last.
 
-       // j>size-1 will also work.
+// j>size-1 will also work.
         for(int j=0; j<size-i-1; j++){
 // it means, starting from 0 all the adjacent sides will be compared
             if(num[j]>num[j+1]){
