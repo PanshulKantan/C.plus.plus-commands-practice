@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+
+// &score in void basically is a memory address in which the data is stores, so if we change the value in different caller, we have to mention the memory storage too if we want to save the modified change in different callers too.
 void answertalley(char input, char ans[], int i, int &score);
 int main(){
     char input;
@@ -28,6 +30,7 @@ int main(){
     }
     cout << "CONGRATULATIONS FOR FINISHING THE TEST! YOU GOT " << score << " QUESTIONS CORRECT!"; 
 }
+// VERY IMPORTANT- if you only write score and not &score, void arguments are the COPY of the code and if you change it, you wont change the original value and it will print the value mentioned in the caller.
 void answertalley(char input, char ans[], int i, int &score){
         if(input == ans[i]){
             score += 1;

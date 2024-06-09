@@ -6,7 +6,7 @@ int main (){
 
 
     //name.length() defines or restricts the length of the string
-    if(name.length() >= 12){
+    if(name.length() /*or name.size()*/ >= 12){
         std::cout << "itna bada :0";
     }
 
