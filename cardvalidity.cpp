@@ -10,7 +10,7 @@ int main(){
     cout << "Please enter your card number: ";
     cin >> x;
     if(x.length()==16){
-        cout << "checking validity...";
+        cout << "checking validity..." << '\n';;
     } else{
         do{
             cout << "Given card number was not of 16 digits please enter 12 digit number: ";
