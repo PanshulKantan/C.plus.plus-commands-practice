@@ -10,6 +10,13 @@ int main () {
     x=5;
     //or you can use int x = 5;
 
+    // also you cant define a variable like int in a different way
+
+    int age{}; // this initializes the integral value of age to be 0
+    int AGE{10}; // this gives the value to the variable as 10
+    // also note that int age{2.9} wont be taken and give an error
+    int Age(2.9); // this will work but it will implicitely convert the value inside it to integer so 2.9 will chop off 0.9 and will give 2
+
     double y = 8.7;
     // double is used for decimal numbers
 
