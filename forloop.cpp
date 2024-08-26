@@ -6,7 +6,7 @@ int main(){
     we define the end number (till where the counting wants to go), and then the skips (how many gaps between each integer)*/
 
 
-    for(double i=1; i <=10; i++){
+    for(size_t i{0}; i <=10; i++){ // size_t also works the same as in i=0, but it is unsigned hence more input, no overflow means it wont rupture the code if more than possible number entered.
 
         //here we define an integer starting from 1 till 3 with only gape of single integer between each, hence 1,2,3 so the std::cout happens 3 times
 
