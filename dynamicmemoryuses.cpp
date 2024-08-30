@@ -17,7 +17,7 @@ int main(){
     }
     delete [] array1;
     array1 = nullptr;
-
+           
     delete [] array2;
     array2 = nullptr;
 
