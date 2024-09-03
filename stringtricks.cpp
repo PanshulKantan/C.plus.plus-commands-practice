@@ -1,6 +1,12 @@
 #include <iostream>
 int main (){
-    std::string name;
+    std::string name; 
+    std::string a = "hello world";
+    std::string x{"hello world", 5}; // it only gives first 5 letters, hence "hello"
+    std::string y {4, 'e'}; // it prints e 4 times and assign it as a string to y "eeee"
+    std::string z{a, 6,5};  // it takes the string x, and then 6 and 5 are starting and counted from starting point which is taken
+    // hence starting from 6th character, going to next 5 characters "world" it is when we print
+
     std::cout << "please enter your full name: ";
     std::getline(std::cin, name);
 
